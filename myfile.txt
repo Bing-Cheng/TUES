@@ -1,1 +1,1 @@
-{"question_id":98745521,"instructor_id":54875,"question":"Which statement istrue?","answer1":"statement1","answer2":"statement2","answer3":"statement3","answer4":"statement4","correctAnswer":3}
+{"question_id":98745521,"instructor_id":54875,"question":"<p>Which statement is true?</p>","answer1":"statement1","answer2":"statemen<br>jhjhjhj<br>t2","answer3":"statement<br>3","answer4":"statement4","correctAnswer":"D"}
