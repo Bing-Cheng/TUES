@@ -2,7 +2,7 @@
 echo 'Hello \n';
 //echo $_POST['content1'] . '\n';
 //echo $_POST['content2'] . '\n';
-file_put_contents("myfile.txt", $_POST[fname]);
+file_put_contents("myfile.txt", $_POST);
 ?>
 <!doctype html>
 <html>

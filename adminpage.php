@@ -47,6 +47,7 @@ tinymce.init({
     statusbar: false
 });
 </script> 
+<script src='./json/json.js'></script>
 <script>
 function copyText()
 {
@@ -68,9 +69,20 @@ self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlenco
 
 //self.xmlHttpReq.setRequestHeader("Content-length", QueryString.length);
 
+var newQuestion = {};
+  
+    newQuestion.question_id= 98745521;
+    newQuestion.instructor_id= 54875;
+	newQuestion.question= 'Which statement istrue?';
+    newQuestion.answer1= 'statement1';
+	newQuestion.answer2= 'statement2';
+	newQuestion.answer3= 'statement3';
+	newQuestion.answer4= 'statement4';
+	newQuestion.correctAnswer= 3;
 
-
-self.xmlHttpReq.send("fname=Henry&lname=Ford");
+    var jsonString = "jsonString=" + JSON.stringify(newQuestion);
+	var jsonString1 = "jsonString=" + "testString";
+self.xmlHttpReq.send(jsonString);
 
 }
 </script>
