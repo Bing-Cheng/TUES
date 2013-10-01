@@ -1,0 +1,22 @@
+.mceBox
+{
+border: dotted 1px #98bf21;
+}
+
+#questionList
+{
+width: 120px;
+}
+
+#workSpace
+{
+position:relative;
+}
+
+#questionContainer
+{
+position:absolute;
+left:150px;
+top: -10px;
+}
+

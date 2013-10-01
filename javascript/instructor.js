@@ -94,7 +94,7 @@ function postQuestion()
 		var newQuestion = {};
 		newQuestion.question_id= 98745521;
 		newQuestion.instructor_id= 54875;
-		newQuestion.type= 'Multiple choice";
+		newQuestion.type= "Multiple choice";
 		newQuestion.points= 5;
 		newQuestion.question= $("div#question").html();
 		newQuestion.answer1= $("span#answer1").html();
@@ -110,3 +110,24 @@ function postQuestion()
 		self.xmlHttpReq.send(jsonString);
 	}
 }//postQuestion
+
+function addQuestion()
+{
+var x=document.getElementById("questionList");
+var option=document.createElement("option");
+option.text="Question" + (x.length + 1);
+try
+  {
+  // for IE earlier than version 8
+  x.add(option,x.options[null]);
+  }
+catch (e)
+  {
+  x.add(option,null);
+  }
+}
+function removeQuestion()
+{
+var x=document.getElementById("questionList");
+x.remove(x.selectedIndex);
+}
