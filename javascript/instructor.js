@@ -94,6 +94,8 @@ function postQuestion()
 		var newQuestion = {};
 		newQuestion.question_id= 98745521;
 		newQuestion.instructor_id= 54875;
+		newQuestion.type= 'Multiple choice";
+		newQuestion.points= 5;
 		newQuestion.question= $("div#question").html();
 		newQuestion.answer1= $("span#answer1").html();
 		newQuestion.answer2= $("span#answer2").html();

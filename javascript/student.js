@@ -33,29 +33,14 @@ $(document).ready(function() {
 	self.xmlHttpReq.send("questionID=1");
 });//document ready
 
-function validateInput(){
-	var validate = false;
-	var chosenAnswer = $( "input[name*='correctAnswer']" ).val();
-	if (chosenAnswer.length === 1){
-		if (chosenAnswer.toUpperCase() < "A" || chosenAnswer.toUpperCase() > "D") {
-			alert('Please choose from "A" to "D".');
-		}else{
-			validate = true;
-		}
-	}else{
-		alert('Please choose and only choose one letter.');
-	}
-	return validate;
-}
 
 function checkAnswer(){
-	if(validateInput()){
-		var chosenAnswer = $( "input[name*='correctAnswer']" ).val();
-		if(gCorrectAnswer === chosenAnswer.toUpperCase()){
-			alert("Correct answer");
-		}else{
-			alert("Incorrect answer");
-		}
+	//var chosenAnswer = $( "input[name*='answer']" ).val();
+	var chosenAnswer = $("input[name='answer']:checked").val(); 
+	if(gCorrectAnswer === chosenAnswer.toUpperCase()){
+		alert("Correct answer");
+	}else{
+		alert("Incorrect answer");
 	}
 }  
 
